@@ -1,5 +1,5 @@
-import { View, Text } from 'react-native';
-import { SIZES } from '../constants';
+import { View, Text, Image } from 'react-native';
+import { SIZES, FONTS, COLORS, SHADOWS, assets } from '../constants';
 
 export const NFTTitle = () => {
   return (
@@ -17,18 +17,34 @@ export const EthPrice = () => {
   );
 };
 
-export const ImgCmp = () => {
+export const ImgCmp = ({ imgUrl, index }) => {
   return (
     <View>
-      <Text>ImgCmp</Text>
+      <Image
+        source={imgUrl}
+        resizeMode="contain"
+        style={{
+          width: 48,
+          height: 48,
+          marginLeft: index == 0 ? 0 : -SIZES.font,
+        }}
+      />
     </View>
   );
 };
 
 export const People = () => {
   return (
-    <View>
-      <Text>People</Text>
+    <View
+      style={{
+        flexDirection: 'row',
+      }}
+    >
+      {[assets.person02, assets.person03, assets.person04].map(
+        (imgUrl, index) => (
+          <ImgCmp imgUrl={imgUrl} index={index} />
+        )
+      )}
     </View>
   );
 };
