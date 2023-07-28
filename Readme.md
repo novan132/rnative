@@ -14,5 +14,10 @@ To try in your phone, install Expo Go (Android) and scan the QR Code. Have Fun!
 
 ## Screeshot
 
+### Home Screen
+
 ![alt text](https://github.com/novan132/rnative/blob/master/assets/capt_list.jpeg?raw=true)
+
+### Detail Screen
+
 ![alt text](https://github.com/novan132/rnative/blob/master/assets/capt_detail.jpeg?raw=true)
