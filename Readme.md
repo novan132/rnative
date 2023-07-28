@@ -11,6 +11,7 @@ npm start
 
 To try in your phone, install Expo Go (Android) and scan the QR Code. Have Fun!
 ![alt text](https://github.com/novan132/rnative/blob/master/assets/capt_qr.png?raw=true)
+<img src="https://github.com/novan132/rnative/blob/master/assets/capt_qr.png width=300">
 
 ## Screeshot
 
